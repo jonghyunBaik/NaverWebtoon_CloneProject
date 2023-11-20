@@ -239,13 +239,13 @@ struct MoreTapView: View {
                     .padding(.bottom, 50)
                     Spacer()
                     if !isLogin {
-                        Button(action: {
-                            isLogin = true
-                        }, label: {
+                        NavigationLink {
+                            LoginView(isLogin: $isLogin)
+                        } label: {
                             Text("로그인")
                                 .frame(width: 350, height: 50)
                                 .foregroundStyle(Color(.white))
-                        })
+                        }
                         .background(Color.green)
                         .padding(.bottom, 90)
                         .clipShape(RoundedRectangle(cornerRadius: 5))
@@ -264,6 +264,6 @@ struct MoreTapView: View {
     }
 }
 
-#Preview {
-    MoreTapView()
-}
+//#Preview {
+//    MoreTapView()
+//}

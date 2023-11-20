@@ -32,8 +32,6 @@ struct WebtoonTap: View {
                         WeekendScrollView(selectedDay: $weekDay)
                     }
                 }
-                .onChange(of: weekDay) {}
-                
             }
             .clipped()
             .ignoresSafeArea()
