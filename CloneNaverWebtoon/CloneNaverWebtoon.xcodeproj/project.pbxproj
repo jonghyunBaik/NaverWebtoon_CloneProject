@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF83D9A031586713EEAB60FA /* Pods_CloneNaverWebtoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C93A120A66F8E1EBA3597A /* Pods_CloneNaverWebtoon.framework */; };
 		F60BA4462AEE6F7F0039B56D /* CloneNaverWebtoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60BA4452AEE6F7F0039B56D /* CloneNaverWebtoonApp.swift */; };
 		F60BA4482AEE6F7F0039B56D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60BA4472AEE6F7F0039B56D /* ContentView.swift */; };
 		F60BA44A2AEE6F810039B56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60BA4492AEE6F810039B56D /* Assets.xcassets */; };
@@ -25,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45C93A120A66F8E1EBA3597A /* Pods_CloneNaverWebtoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloneNaverWebtoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C368B7722722F60E9929F5D /* Pods-CloneNaverWebtoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloneNaverWebtoon.debug.xcconfig"; path = "Target Support Files/Pods-CloneNaverWebtoon/Pods-CloneNaverWebtoon.debug.xcconfig"; sourceTree = "<group>"; };
+		F1DB8A8B0F196789DA19A728 /* Pods-CloneNaverWebtoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloneNaverWebtoon.release.xcconfig"; path = "Target Support Files/Pods-CloneNaverWebtoon/Pods-CloneNaverWebtoon.release.xcconfig"; sourceTree = "<group>"; };
 		F60BA4422AEE6F7F0039B56D /* CloneNaverWebtoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneNaverWebtoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60BA4452AEE6F7F0039B56D /* CloneNaverWebtoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneNaverWebtoonApp.swift; sourceTree = "<group>"; };
 		F60BA4472AEE6F7F0039B56D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,17 +52,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF83D9A031586713EEAB60FA /* Pods_CloneNaverWebtoon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		366CC8E95F52DFC4AC7F30EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45C93A120A66F8E1EBA3597A /* Pods_CloneNaverWebtoon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97C749C88DAF236F31CA44A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C368B7722722F60E9929F5D /* Pods-CloneNaverWebtoon.debug.xcconfig */,
+				F1DB8A8B0F196789DA19A728 /* Pods-CloneNaverWebtoon.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F60BA4392AEE6F7F0039B56D = {
 			isa = PBXGroup;
 			children = (
 				F60BA4442AEE6F7F0039B56D /* CloneNaverWebtoon */,
 				F60BA4432AEE6F7F0039B56D /* Products */,
+				97C749C88DAF236F31CA44A2 /* Pods */,
+				366CC8E95F52DFC4AC7F30EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F60BA4502AEE6F810039B56D /* Build configuration list for PBXNativeTarget "CloneNaverWebtoon" */;
 			buildPhases = (
+				19153321E75A8D0125772C7D /* [CP] Check Pods Manifest.lock */,
 				F60BA43E2AEE6F7F0039B56D /* Sources */,
 				F60BA43F2AEE6F7F0039B56D /* Frameworks */,
 				F60BA4402AEE6F7F0039B56D /* Resources */,
+				3D4E66A27A73DD0376B4AB65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +231,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19153321E75A8D0125772C7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloneNaverWebtoon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D4E66A27A73DD0376B4AB65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloneNaverWebtoon/Pods-CloneNaverWebtoon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloneNaverWebtoon/Pods-CloneNaverWebtoon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloneNaverWebtoon/Pods-CloneNaverWebtoon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F60BA43E2AEE6F7F0039B56D /* Sources */ = {
@@ -350,6 +419,7 @@
 		};
 		F60BA4512AEE6F810039B56D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C368B7722722F60E9929F5D /* Pods-CloneNaverWebtoon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -379,6 +449,7 @@
 		};
 		F60BA4522AEE6F810039B56D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DB8A8B0F196789DA19A728 /* Pods-CloneNaverWebtoon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

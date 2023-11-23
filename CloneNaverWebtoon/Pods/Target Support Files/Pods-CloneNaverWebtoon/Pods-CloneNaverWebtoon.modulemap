@@ -1,0 +1,6 @@
+framework module Pods_CloneNaverWebtoon {
+  umbrella header "Pods-CloneNaverWebtoon-umbrella.h"
+
+  export *
+  module * { export * }
+}

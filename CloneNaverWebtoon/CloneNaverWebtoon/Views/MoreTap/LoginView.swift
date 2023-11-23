@@ -23,6 +23,8 @@ struct LoginView: View {
     
     @State private var setId : String = ""
     @State private var setPw : String = ""
+    
+    
     @State private var loginState = 4
     @Binding var isLogin : Bool
     
@@ -60,12 +62,18 @@ struct LoginView: View {
                 .background(.gray)
                 
                 if loginState == 2 {
-                        Text("비밀번호를 입력해주세요")
-                            .foregroundStyle(.red)
-                            .font(.caption)
-                            .frame(width: 350, alignment: .leading)
-                            .padding(.bottom, 10)
+                    Text("비밀번호를 입력해주세요")
+                        .foregroundStyle(.red)
+                        .font(.caption)
+                        .frame(width: 350, alignment: .leading)
+                        .padding(.bottom, 10)
                     
+                } else if loginState == 3 {
+                    Text("비밀번호가 일치하지 않습니다")
+                        .foregroundStyle(.red)
+                        .font(.caption)
+                        .frame(width: 350, alignment: .leading)
+                        .padding(.bottom, 10)
                 }
                 
                 Button {
@@ -95,10 +103,14 @@ struct LoginView: View {
 }
 
 func naverLogin (id : String, pw : String) -> Int {
+    let ids = ["thisisid1" : "thisispw1", "thisisid2" : "thisispw2", "thisisid3" : "thisispw3"]
+    
     if id == "" {
         return 1
     } else if pw == "" {
         return 2
+    } else if pw != ids[id] {
+        return 3
     } else {
         return 0
     }
