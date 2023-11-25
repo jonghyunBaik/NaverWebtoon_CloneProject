@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60CF1182B10BCE30097837B /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60CF1172B10BCE30097837B /* MyPageView.swift */; };
 		F63B9C352B0F6F5900BF0636 /* WebtoonTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B9C202B0F6F5900BF0636 /* WebtoonTapView.swift */; };
 		F63B9C362B0F6F5900BF0636 /* NaverWebtoonCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B9C212B0F6F5900BF0636 /* NaverWebtoonCloneApp.swift */; };
 		F63B9C372B0F6F5900BF0636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63B9C222B0F6F5900BF0636 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60CF1172B10BCE30097837B /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		F63B9C0E2B0F6EB600BF0636 /* naverWebtoonClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naverWebtoonClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63B9C202B0F6F5900BF0636 /* WebtoonTapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebtoonTapView.swift; sourceTree = "<group>"; };
 		F63B9C212B0F6F5900BF0636 /* NaverWebtoonCloneApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaverWebtoonCloneApp.swift; sourceTree = "<group>"; };
@@ -77,10 +79,8 @@
 				F63B9C212B0F6F5900BF0636 /* NaverWebtoonCloneApp.swift */,
 				F63B9C342B0F6F5900BF0636 /* ContentView.swift */,
 				F63B9C222B0F6F5900BF0636 /* Assets.xcassets */,
-				F63B9C232B0F6F5900BF0636 /* WebtoonImageView.swift */,
 				F63B9C242B0F6F5900BF0636 /* Models */,
 				F63B9C272B0F6F5900BF0636 /* Preview Content */,
-				F63B9C292B0F6F5900BF0636 /* WebtoonDetailView.swift */,
 				F63B9C2A2B0F6F5900BF0636 /* Views */,
 			);
 			path = naverWebtoonClone;
@@ -120,6 +120,8 @@
 				F63B9C2D2B0F6F5900BF0636 /* WebtoonTap.swift */,
 				F63B9C2E2B0F6F5900BF0636 /* WeekendScrollView.swift */,
 				F63B9C2F2B0F6F5900BF0636 /* BannerAdView.swift */,
+				F63B9C292B0F6F5900BF0636 /* WebtoonDetailView.swift */,
+				F63B9C232B0F6F5900BF0636 /* WebtoonImageView.swift */,
 			);
 			path = WebtoonTap;
 			sourceTree = "<group>";
@@ -136,6 +138,7 @@
 		F63B9C332B0F6F5900BF0636 /* MyPageTap */ = {
 			isa = PBXGroup;
 			children = (
+				F60CF1172B10BCE30097837B /* MyPageView.swift */,
 			);
 			path = MyPageTap;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				F63B9C3D2B0F6F5900BF0636 /* WebtoonScrollView.swift in Sources */,
 				F63B9C392B0F6F5900BF0636 /* Weekend.swift in Sources */,
 				F63B9C382B0F6F5900BF0636 /* WebtoonImageView.swift in Sources */,
+				F60CF1182B10BCE30097837B /* MyPageView.swift in Sources */,
 				F63B9C3A2B0F6F5900BF0636 /* DailyWebtoons.swift in Sources */,
 				F63B9C3C2B0F6F5900BF0636 /* WebtoonDetailView.swift in Sources */,
 				F63B9C432B0F6F5900BF0636 /* ContentView.swift in Sources */,

@@ -29,7 +29,7 @@ struct WebtoonTapView: View {
                         Image(systemName: "star.square")
                         Text("베스트도전")
                       }
-                    Text("The Last Tab")
+                    MyPageView()
                       .tabItem {
                         Image(systemName: "face.smiling.inverse")
                         Text("MY")
@@ -44,7 +44,6 @@ struct WebtoonTapView: View {
                 .toolbarBackground(Color(hue: 1.0, saturation: 0.0, brightness: 0.172), for: .tabBar)
                 .toolbarBackground(.visible, for: .tabBar)
                 .toolbarColorScheme(.dark, for: .tabBar)
-                
             }
             .font(.headline)
             .ignoresSafeArea()

@@ -29,6 +29,7 @@ struct WebtoonTap: View {
                     Section {
                         WebtoonScrollView(dailyWebtoons: $webtoons, weekDay: $weekDay)
                     } header: {
+                        
                         WeekendScrollView(selectedDay: $weekDay)
                     }
                 }
@@ -36,6 +37,20 @@ struct WebtoonTap: View {
             .clipped()
             .ignoresSafeArea()
             .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.172))
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {}) {
+                        Image(systemName: "cart.fill")
+                            .foregroundColor(.white)
+                    }
+                }
+                ToolbarItem{
+                    Button(action: {}) {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.white)
+                    }
+                }
+            }
         }
     }
 }

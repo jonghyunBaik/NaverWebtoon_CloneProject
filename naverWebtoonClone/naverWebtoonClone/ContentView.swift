@@ -14,26 +14,12 @@ struct ContentView: View {
             VStack {
                 WebtoonTapView()
             }
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button(action: {}) {
-                        Image(systemName: "cart.fill")
-                            .foregroundColor(.white)
-                    }
-                }
-                ToolbarItem{
-                    Button(action: {}) {
-                        Image(systemName: "magnifyingglass")
-                            .foregroundColor(.white)
-                    }
-                }
-            }
             .toolbarBackground(.hidden)
                 
         }
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}
