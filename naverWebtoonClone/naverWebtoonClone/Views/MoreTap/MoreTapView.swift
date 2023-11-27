@@ -90,7 +90,7 @@ struct MoreTapView: View {
                             VStack{
                                 Image(systemName: "magnifyingglass")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("쿠키오븐")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -103,7 +103,7 @@ struct MoreTapView: View {
                             VStack{
                                 Image(systemName: "magnifyingglass")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("쿠키미션")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -114,9 +114,9 @@ struct MoreTapView: View {
                             
                         }, label: {
                             VStack{
-                                Image(systemName: "magnifyingglass")
+                                Image(systemName: "speaker.fill")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("공지사항")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -134,7 +134,7 @@ struct MoreTapView: View {
                             VStack{
                                 Image(systemName: "magnifyingglass")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("겟짤")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -145,9 +145,9 @@ struct MoreTapView: View {
                             
                         }, label: {
                             VStack{
-                                Image(systemName: "magnifyingglass")
+                                Text("P")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("Play")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -160,7 +160,7 @@ struct MoreTapView: View {
                             VStack{
                                 Image(systemName: "magnifyingglass")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("스토어")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -171,9 +171,9 @@ struct MoreTapView: View {
                             
                         }, label: {
                             VStack{
-                                Image(systemName: "magnifyingglass")
+                                Image(systemName: "gearshape")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("설정")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -190,7 +190,7 @@ struct MoreTapView: View {
                             VStack{
                                 Image(systemName: "magnifyingglass")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("툰필터")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -203,7 +203,7 @@ struct MoreTapView: View {
                             VStack{
                                 Image(systemName: "magnifyingglass")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("웹툰운세")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -216,7 +216,7 @@ struct MoreTapView: View {
                             VStack{
                                 Image(systemName: "magnifyingglass")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("내가만든쿠기")
                             }
                         })
                         .foregroundStyle(Color.white)
@@ -229,7 +229,7 @@ struct MoreTapView: View {
                             VStack{
                                 Image(systemName: "magnifyingglass")
                                     .font(.largeTitle)
-                                Text("검색")
+                                Text("툰BTI")
                             }
                         })
                         .foregroundStyle(Color.white)
