@@ -23,6 +23,7 @@
 		F63B9C412B0F6F5900BF0636 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B9C312B0F6F5900BF0636 /* LoginView.swift */; };
 		F63B9C422B0F6F5900BF0636 /* MoreTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B9C322B0F6F5900BF0636 /* MoreTapView.swift */; };
 		F63B9C432B0F6F5900BF0636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B9C342B0F6F5900BF0636 /* ContentView.swift */; };
+		F6EDABD92B1861BB00E957C4 /* BestTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EDABD82B1861BB00E957C4 /* BestTapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		F63B9C312B0F6F5900BF0636 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F63B9C322B0F6F5900BF0636 /* MoreTapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTapView.swift; sourceTree = "<group>"; };
 		F63B9C342B0F6F5900BF0636 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6EDABD82B1861BB00E957C4 /* BestTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		F63B9C2A2B0F6F5900BF0636 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6EDABD72B18619300E957C4 /* BestTap */,
 				F63B9C2B2B0F6F5900BF0636 /* WebtoonTap */,
 				F63B9C302B0F6F5900BF0636 /* MoreTap */,
 				F63B9C332B0F6F5900BF0636 /* MyPageTap */,
@@ -141,6 +144,14 @@
 				F60CF1172B10BCE30097837B /* MyPageView.swift */,
 			);
 			path = MyPageTap;
+			sourceTree = "<group>";
+		};
+		F6EDABD72B18619300E957C4 /* BestTap */ = {
+			isa = PBXGroup;
+			children = (
+				F6EDABD82B1861BB00E957C4 /* BestTapView.swift */,
+			);
+			path = BestTap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				F63B9C382B0F6F5900BF0636 /* WebtoonImageView.swift in Sources */,
 				F60CF1182B10BCE30097837B /* MyPageView.swift in Sources */,
 				F63B9C3A2B0F6F5900BF0636 /* DailyWebtoons.swift in Sources */,
+				F6EDABD92B1861BB00E957C4 /* BestTapView.swift in Sources */,
 				F63B9C3C2B0F6F5900BF0636 /* WebtoonDetailView.swift in Sources */,
 				F63B9C432B0F6F5900BF0636 /* ContentView.swift in Sources */,
 				F63B9C412B0F6F5900BF0636 /* LoginView.swift in Sources */,

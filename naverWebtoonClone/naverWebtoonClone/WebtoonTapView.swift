@@ -24,7 +24,7 @@ struct WebtoonTapView: View {
                         Image(systemName: "book.closed")
                         Text("추천완결")
                       }
-                    Text("The Last Tab")
+                    BestTapView()
                       .tabItem {
                         Image(systemName: "star.square")
                         Text("베스트도전")
